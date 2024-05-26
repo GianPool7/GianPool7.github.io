@@ -74,6 +74,7 @@
     padding: 5px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     border-radius: 20px;
 }
 
@@ -107,6 +108,7 @@
     justify-content: space-around;
     align-items: center ;
     border-radius: 20px;
+    padding: 10px;
 }
 
 .barra a{
@@ -133,7 +135,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px var(--color-dos);
 }
 
 .nom h1{
@@ -174,13 +175,12 @@
 
 .imagenes_skill{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
+    background-color: var(--color-boo);
 }
-
-
 
 .imagenes_skill img{
     width: 20vh;
@@ -190,6 +190,7 @@
 .caja_uno{
     padding: 10px;
     border-radius: 10px;
+    background-color: var(--color-js);
 }
 
 /**/
@@ -355,5 +356,64 @@
         gap: 20px;
     }
 
+}
 
+@media only screen and (max-width: 375px) {
+
+    .image img{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:    'me'
+                                'nav'
+                                'nombre'
+                                'experiencia'
+                                'lenguaje'
+                                'proyecto'
+                                'pro'
+                                'proy'
+                                'proye';
+        gap: 10px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+    .image img{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:    'me'
+                                'nav'
+                                'nombre'
+                                'experiencia'
+                                'lenguaje'
+                                'proyecto'
+                                'pro'
+                                'proy'
+                                'proye';
+        gap: 10px;
+    }
+
+    .lenguajes p{
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px;
+        width: 40%;
+        text-align: center;
+    }
+    
 }
