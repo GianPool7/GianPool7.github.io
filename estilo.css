@@ -179,7 +179,6 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
-    background-color: var(--color-boo);
 }
 
 .imagenes_skill img{
@@ -190,7 +189,6 @@
 .caja_uno{
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--color-js);
 }
 
 /**/
