@@ -53,7 +53,7 @@
 
 .me{
     grid-area: me;
-    background-color: var(--color-texto);
+    background-color: #ef3c44;
     padding: 10px;
     border-radius: 20px;
 }
