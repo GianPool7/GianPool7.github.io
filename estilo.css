@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+:root{
+    --color-fondo:#001b2e;
+    --color-txt:#131515;
+    --color-dos:#2B2C28;
+    --color-tres:#F8E16C;
+    --color-uno:#FEFEFF;
+    --color-php:#591582;
+    --color-tem:#E419D2;
+    --color-boo:#6500FC;
+    --color-xa:#E48419;
+    --color-js:#FFE800;
+    --color-my:#1241E0;
+    --color-html:#FF6C00;
+    --color-css:#0678DA;
+    --color-titulo:#ffefd3;
+    --color-texto:#adb6c4;
+    --color-fondos:#294c60;
+    --color-textos:#e84855;
+    --color-texto1:#ed1c24;
+}
+
+.contenedor{
+    background-color: var(--color-txt);
+    padding: 10px;
+}
+
+
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas:    'me nav'
+                            'me nombre'
+                            'me experiencia'
+                            'lenguaje lenguaje'
+                            'proyecto proyecto'
+                            'proye proy'
+                            'pro pro';
+    gap: 20px;
+}
+
+/**/
+
+.me{
+    grid-area: me;
+    background-color: var(--color-texto);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.image{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.image img{
+    display: block;
+    margin: auto;
+    width: 80vh;
+}
+
+.links{
+    background-color: var(--color-txt);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.links a{
+    background-color: var(--color-fondo);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links i{
+    color: var(--color-uno);
+    font-size: 30px;
+}
+
+.links i:hover{
+    color: var(--color-titulo);
+}
+
+.me .links img{
+    width: 5vh;
+    display: block;
+    margin: auto;
+}
+
+/**/
+
+.barra{
+    grid-area: nav;
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    border-radius: 20px;
+}
+
+.barra a{
+    text-decoration: none;
+    color: var(--color-uno);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-uno);
+}
+
+.barra a:hover{
+    box-shadow: 4px 4px 3px var(--color-uno);
+}
+
+
+/**/
+
+.nombre{
+    grid-area: nombre;
+    background-color: var(--color-uno);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--color-dos);
+}
+
+.nom h1{
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+    color: var(--color-texto1);
+}
+
+/**/
+
+.exp{
+    grid-area: experiencia;
+    background-color: var(--color-fondo);
+    padding: 15px;
+    border-radius: 20px;
+    color: var(--color-uno);
+    text-align: justify;
+}
+
+/**/
+
+.lenguajes_imagenes{
+    grid-area: lenguaje;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-fondo);
+}
+
+.lenguajes_imagenes h1{
+    font-size: 40px;
+    color: var(--color-titulo);
+    padding: 20px;
+}
+
+
+/**/
+
+.imagenes_skill{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+.imagenes_skill img{
+    width: 20vh;
+    padding: 5px;
+}
+
+.caja_uno{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/**/
+
+.proyecto{
+    grid-area: proyecto;
+    text-align: center;
+    padding: 20px;
+}
+
+.proyecto h1{
+    font-size: 40px;
+    color: var(--color-uno);
+}
+
+
+
+/**/
+
+.p1{
+    grid-area: pro;
+    background-color: var(--color-fondo);
+    padding: 10px;
+    color: var(--color-uno);
+}
+
+/**/
+
+.p2{
+    grid-area: proy;
+    background-color: var(--color-fondo);
+    padding: 10px;
+    color: var(--color-uno);
+}
+
+/**/
+
+.p3{
+    grid-area: proye;
+    background-color: var(--color-fondo);
+    padding: 10px;
+    color: var(--color-uno);
+}
+
+.p1_img{
+    margin-bottom: 10px;
+}
+
+.p1_img img{
+    width: 100%;
+}
+
+/**/
+
+.desc{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.desc h3,p{
+    margin: 10px;
+}
+
+
+/**/
+.lenguajes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.lenguajes p{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+/**/
+
+.tem{
+    background-color: var(--color-tem);
+    color: var(--color-uno);
+}
+
+.boo{
+    background-color: var(--color-boo);
+    color: var(--color-uno);
+}
+
+.js{
+    background-color: var(--color-js);
+    color: var(--color-txt);
+}
+
+.php{
+    background-color: var(--color-php);
+    color: var(--color-uno);
+}
+
+.xa{
+    background-color: var(--color-xa);
+    color: var(--color-uno);
+}
+
+.my{
+    background-color: var(--color-my);
+    color: var(--color-uno);
+}
+
+.css{
+    background-color: var(--color-css);
+    color: var(--color-uno);
+}
+
+.html{
+    background-color: var(--color-html);
+    color: var(--color-uno);
+}
+
+/**/
+
+.btns{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns a{
+    background-color: var(--color-txt);
+    color: var(--color-uno);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btns a:hover{
+    box-shadow: 2px 1px 5px var(--color-uno);
+    
+}
+
+
+/**/
+
+@media only screen and (max-width: 768px) {
+
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:    'me'
+                                'nav'
+                                'nombre'
+                                'experiencia'
+                                'lenguaje'
+                                'proyecto'
+                                'pro'
+                                'proy'
+                                'proye';
+        gap: 20px;
+    }
+
+
+}
