@@ -1,6 +1,6 @@
-```
-#🎉 Mi página web ya está en línea 🚀
-```
+
+## 🎉Mi página web ya está en línea 🚀
+
 
 ¡Bienvenido! Mi sitio web ya está disponible, desarrollado con pasión utilizando **Astro** y **Tailwind CSS** para ofrecer velocidad y diseño moderno. ✨
 
