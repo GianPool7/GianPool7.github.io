@@ -1,0 +1,77 @@
+---
+
+const proyectos=[
+    // {id:1,titulo:"Panel de control (Dashboard)",img:"https://gianpool7.github.io/img/Proyectos/p_dos.PNG",tech:["Php","Mysql","Html","Css","plantilla"],link:"",repositorio:""},
+    // {id:2,titulo:"Sitio Web de postulación",img:"https://gianpool7.github.io/img/Proyectos/p_uno.PNG",tech:["Php","Mysql","Html","Css","plantilla"],link:"",repositorio:"https://github.com/GianPool7/Sitio_Web_Postulaci-n-"},
+    // {id:3,titulo:"Pagina Web",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Js","Html","Css"],link:"",repositorio:""},
+    {id:4,titulo:"Formulario Web FiberPro - Reclamos",img:"img/proyectos/FiberPro.png",tech:["Js","Html","Css","Python"],link:"https://fiberpro.com.pe/reclamos/",repositorio:"https://github.com/GianPool7/Formularios_Reclamo.git"},
+    {id:4,titulo:"Formulario Web MaxPro - Reclamos",img:"img/proyectos/MaxPro.png",tech:["Js","Html","Css","Python"],link:"https://maxpro.com.pe/reclamos/",repositorio:"https://github.com/GianPool7/Formularios_Reclamo.git"},
+    {id:5,titulo:"Mi Portafolio Web",img:"img/proyectos/Portafolio.png",tech:["Astro","Html","Css","Js"],link:"https://gianpool7.github.io/Gpool7/",repositorio:"https://github.com/GianPool7/Gpool7"},
+]
+
+---
+
+<div class="p-2" id="proyectos">
+
+</div>
+
+<div class="block m-auto w-5/6">
+
+    <h1 class="text-center font-bold text-4xl p-4 mt-10 mb-10">Proyectos</h1>
+
+    <div class="p-2 flex flex-wrap justify-evenly">
+
+
+        {proyectos.map((proyecto,index) => (
+            <div class="w-full lg:w-1/3 p-2" key={proyecto.id}> {/* 'key' para ayudar con la optimización del renderizado */}
+                <div class="h-62">
+                    <img class="rounded-t-2xl bg-cover bg-center" src={proyecto.img} alt="Imagen del proyecto" />
+                </div>
+
+                <div class="bg-white p-4 rounded-b-2xl shadow-xl">
+                    <h2 class="font-bold text-2xl">{proyecto.titulo}</h3>
+
+                    <div class="p-4 flex justify-around flex-wrap">
+                        {proyecto.tech.map((t,index)=>(
+                            <span key={index} class="bg-gray-700 p-2 rounded-full text-white m-1 lg:w-1/6 text-center">{t}</span>
+                        ))}
+                    </div>
+
+                    <div class="p-1 flex justify-around flex-wrap w-full gap-1">
+
+                        <a href={proyecto.link} target="_blank" rel="noopener noreferrer" class="bg-yellow-300 rounded-full flex justify-center p-4 gap-2 text-white w-full sm:w-1/3 hover:shadow-2xl">
+                            
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+
+                            <span class="">Link</span>
+                        </a>
+
+                        <a href={proyecto.repositorio} target="_blank" rel="noopener noreferrer" class="bg-blue-950 rounded-full flex justify-center p-4 gap-2 text-white w-full sm:w-1/3">
+                            <i class="fa-brands fa-github text-xl"></i>
+                            <span>Repositorio</span>
+                        </a>
+
+                        {/* <button class="bg-red-600 cursor-pointer rounded-full flex justify-center p-4 gap-2 text-white outline-none hover:shadow-2xl hover:bg-red-800 w-full sm:w-1/4" id={`mas-${index}`}>
+                            <i class="fa-solid fa-circle-info text-xl"></i>
+                            <span>Detalle</span>
+                        </button> */}
+
+                        {/* <dialog class="none" id="mostrar">
+                            <h2>{proyecto.titulo}</h2>
+                            <h1>gola</h1>
+                        </dialog> */}
+                    </div>
+
+                </div>
+
+            </div>
+        ))}
+
+    </div>
+
+</div>
+
+
+
+<script src="/src/assets/js/modos.js"></script>
+
